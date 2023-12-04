@@ -1,6 +1,6 @@
 
 
-const GalleryImage = [
+const GalleryImages = [
       //Fun and Games  
       {
         id: 0,
@@ -208,5 +208,5 @@ const GalleryImage = [
     
   ];
   
-  export default GalleryImage;
+  export default GalleryImages;
   
