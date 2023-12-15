@@ -67,7 +67,7 @@ function Gallery() {
             <div className="row portfolio-container">
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/IMG_20231116_212902.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/IMG_20231116_212902.jpg" alt="IMG_20231116_212902 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/IMG_20231116_212902.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
@@ -77,7 +77,7 @@ function Gallery() {
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/IMG20230622095600.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/IMG20230622095600.jpg" alt="IMG20230622095600 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/IMG20230622095600.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
@@ -87,7 +87,7 @@ function Gallery() {
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/portfolio-3.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/portfolio-3.jpg" alt="portfolio-3 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/portfolio-3.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
@@ -97,7 +97,7 @@ function Gallery() {
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/portfolio-4.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/portfolio-4.jpg" alt="portfolio-4 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/portfolio-4.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
@@ -107,7 +107,7 @@ function Gallery() {
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/portfolio-5.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/portfolio-5.jpg" alt="portfolio-5 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/portfolio-5.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
@@ -117,7 +117,7 @@ function Gallery() {
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div className="position-relative overflow-hidden mb-2">
-                        <img className="img-fluid w-100" src="assets/img/portfolio-6.jpg" alt="" />
+                        <img className="img-fluid w-100" src="assets/img/portfolio-6.jpg" alt="portfolio-6 image" />
                         <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="assets/img/portfolio-6.jpg" data-lightbox="portfolio">
                                 <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
