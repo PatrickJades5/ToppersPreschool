@@ -6,9 +6,9 @@ import GalleryDisplay from './GalleryDisplay';
 const GalleryHeader = () => {
   return (
     <>
-    <PageHeaders header="Gallery" />
-    <Gallery />
-    <GalleryDisplay />
+      <PageHeaders header="Gallery" />
+      <Gallery />
+      <GalleryDisplay />
     </>
   )
 }
