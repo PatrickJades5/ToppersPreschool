@@ -7,16 +7,23 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mdbootstrap/react-testimonial-slider": "^1.0.0",
+    "@reduxjs/toolkit": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.2",
     "jquery": "^3.7.1",
+    "mdb-react-ui-kit": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
+    "react-image-zooom": "^1.2.0",
+    "react-owl-carousel": "^2.3.3",
+    "react-redux": "^9.0.4",
     "react-router-dom": "^6.19.0",
     "react-scripts": "5.0.1",
+    "react-zoom-pan-pinch": "^3.3.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.1",
     "web-vitals": "^2.1.4"
@@ -44,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
   }
 }

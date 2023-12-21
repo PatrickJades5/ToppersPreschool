@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import GalleryImages from "./GalleryImages";
+import { Link } from "react-router-dom";
+import ImageZoom from "react-image-zooom";
 
-const GalleryDisplay = () => {
+const GalleryDisplay = (props) => {
+
+  // const { ImageZoom } = props;
+
   const [items, setItems] = useState(GalleryImages);
   const [active, setActive] = useState(false);
   const filterItem = (categItem) => {
@@ -25,60 +30,60 @@ const GalleryDisplay = () => {
       <div className="container">
         <ul className="nav nav-pills justify-content-center">
           <li className="nav-item">
-            <a
+            <Link
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
               onClick={() => filterItem("AnnualFunction")}
             >
               Annual Function
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
               onClick={() => filterItem("FestivalCelebration")}
             >
               Festival Celebration
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
               onClick={() => filterItem("DaysCelebration")}
             >
               Days Celebration
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
               onClick={() => filterItem("FunandGames")}
             >
               Fun and Games
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
               onClick={() => filterItem("PicnicandTrip")}
             >
               Picnic and Educational Trip
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
+            <Link
 
               className={active ? "nav-link" : "nav-link active"}
-              href="javascrip:0;"
+              to="javascrip:0;"
 
               onClick={() => setItems(GalleryImages)}
             >
               All
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -86,27 +91,25 @@ const GalleryDisplay = () => {
       <div className="container-fluid mt-4">
         <div className="row">
           {items.map((elem) => {
-            const { id, name, imageurl, description } = elem;
+            const { id, imageurl } = elem;
 
             return (
               <div className="col-sm-4" id={id}>
-                <div class="card mb-3">
-                  <div class="row no-gutters">
-                    <div class="col-md-5">
-                      <img class="img-fluid" src={imageurl} alt={name} />
-
+                <div className="card mb-3">
+                  <div className="row no-gutters">
+                    <div className="col-md-12">
+                      <ImageZoom src={imageurl} alt="Zoom-images" zoom="500" />
                     </div>
 
-                    <div class="col-md-7">
-                      <div class="card-body">
-                        <h5 class="card-title mb-0">{name}</h5>
-                        <p class="card-text">{description}</p>
-                        <div class="d-flex justify-content-between">
+                    <div className="col-md-0">
+                      <div className="card-body">
+                        {/* <h5 className="card-title mb-0">{id}</h5>
+                        <p className="card-text">{name}</p>
+                        <p className="card-text">{description}</p> */}
+                        <div className="d-flex justify-content-between">
                         </div>
                       </div>
                     </div>
-
-
                   </div>
                 </div>
               </div>

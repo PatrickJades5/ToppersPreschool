@@ -6,9 +6,9 @@ import Testimonial from '../Testimonial/Testimonial';
 const TeachersHeader = () => {
   return (
     <>
-        <PageHeaders header="Teachers" />
-        <Teachers />
-        <Testimonial />
+      <PageHeaders header="Teachers" />
+      <Teachers />
+      <Testimonial />
     </>
   )
 }

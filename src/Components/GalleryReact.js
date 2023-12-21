@@ -46,7 +46,7 @@ const GalleryReact = () => {
               className={active ? "nav-link" : "nav-link active"}
               href="javascrip:0;"
               onClick={() => filterItem("evening")}
-            >  
+            >
               Evening
             </a>
           </li>

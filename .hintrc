@@ -15,5 +15,21 @@
     "not edge <= 115",
     "not chrome <= 115",
     "not firefox <= 116"
-  ]
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "-ms-touch-action",
+          "-webkit-tap-highlight-color",
+          "text-decoration-skip-ink",
+          "-webkit-overflow-scrolling",
+          "orphans",
+          "widows",
+          "overflow-anchor"
+        ]
+      }
+    ]
+  }
 }
