@@ -5,10 +5,9 @@ import Activities from './Activities';
 const ActivitiesHeader = () => {
   return (
     <>
-        <PageHeaders header="Activities" /> 
-        <Activities />
+      <PageHeaders header="Activities" />
+      <Activities />
     </>
   )
 }
-
 export default ActivitiesHeader;

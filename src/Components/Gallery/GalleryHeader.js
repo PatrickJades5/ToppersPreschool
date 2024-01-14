@@ -12,5 +12,4 @@ const GalleryHeader = () => {
     </>
   )
 }
-
 export default GalleryHeader;

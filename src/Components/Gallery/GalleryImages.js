@@ -1,5 +1,3 @@
-
-
 const GalleryImages = [
   //Fun and Games  
   {
@@ -207,5 +205,4 @@ const GalleryImages = [
   },
 
 ];
-
 export default GalleryImages;

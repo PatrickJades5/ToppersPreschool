@@ -1,6 +1,4 @@
-
 const TeachersImages = [
-
   {
     id: 1,
     imageurl: "./assets/img/MonikaBhajibhakare.jpg",
@@ -42,10 +40,5 @@ const TeachersImages = [
     name: "Monika Bhajibhakare",
     // description: "Kids playing indoor games"
   },
-
-
-
-
 ];
-
 export default TeachersImages;

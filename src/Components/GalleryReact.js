@@ -8,7 +8,6 @@ const GalleryReact = () => {
     const updateItems = Menu.filter((curElem) => {
       return curElem.category === categItem;
     });
-
     setItems(updateItems);
     setActive(true);
   };
@@ -70,12 +69,10 @@ const GalleryReact = () => {
           </li>
         </ul>
       </div>
-
       <div className="container-fluid mt-4">
         <div className="row">
           {items.map((elem) => {
             const { id, name, image, description, price } = elem;
-
             return (
               <div className="col-sm-4" id={id}>
                 <div class="card mb-3">
@@ -105,5 +102,4 @@ const GalleryReact = () => {
     </>
   );
 };
-
 export default GalleryReact;

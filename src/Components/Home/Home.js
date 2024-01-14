@@ -23,16 +23,13 @@ function Home() {
           </div>
         </div><br />
       </div>
-      <Facilities Component />
       <About Component />
+      <Facilities Component />
       <Activities Component />
       <Teachers Component />
       <Testimonial Component />
       <Gallery Component />
-
     </>
   )
 }
-
 export default Home;
-

@@ -1,11 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Activities() {
     return (
         <>
-
             <div className="container-fluid pt-5">
                 <div className="container">
                     <div className="text-center pb-2">
@@ -103,5 +101,4 @@ function Activities() {
         </>
     )
 }
-
 export default Activities;
