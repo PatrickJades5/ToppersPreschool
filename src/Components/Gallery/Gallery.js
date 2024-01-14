@@ -1,34 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 function Gallery() {
-
-    //         const [items, setItems] = useState();
-    //         const [active, setActive] = useState(false);
-    //         const filterItem = (categItem) => {
-    //         const updateItems = ((curElem) => {
-    //       return curElem.category === categItem;
-    //     });
-
-    //     setItems(updateItems);
-    //     setActive(true);
-    //   };
-
     return (
         <>
-            {/* 
-<div className="container-fluid bg-primary mb-5">
-        <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: 400 }}>
-            <h3 className="display-3 font-weight-bold text-white">Gallery</h3>
-            <div className="d-inline-flex text-white">
-                <p className="m-0"><Link className="text-white" to="/">Home</Link></p>
-                <p className="m-0 px-2">/</p>
-                <p className="m-0">Gallery</p>
-            </div>
-        </div>
-    </div> */}
-
             <div className="container-fluid pt-5 pb-3">
                 <div className="container">
                     <div className="text-center pb-2">
@@ -38,25 +13,6 @@ function Gallery() {
                     <div className="row">
                         <div className="col-12 text-center mb-2">
                             <ul className="list-inline mb-4" id="portfolio-filters">
-
-                                {/* <li className="nav-item">
-                        <a
-                             className= {active ? "nav-link" : "nav-link active"}
-                             href="javascrip:0;"
-                             onClick={() => filterItem("All")}
-                        >   
-                             All
-                         </a>
-                         </li>
-                         <li className="nav-item">
-                        <a
-                             className= {active ? "nav-link" : "nav-link active"}
-                             href="javascrip:0;"
-                             onClick={() => filterItem("Playing")}
-                        >   
-                             Playing
-                         </a>
-                         </li> */}
                                 <li className="btn btn-outline-primary m-1 active" data-filter="*">All</li>
                                 <li className="btn btn-outline-primary m-1" data-filter=".first">Playing</li>
                                 <li className="btn btn-outline-primary m-1" data-filter=".second">Drawing</li>
@@ -131,5 +87,4 @@ function Gallery() {
         </>
     )
 }
-
 export default Gallery;

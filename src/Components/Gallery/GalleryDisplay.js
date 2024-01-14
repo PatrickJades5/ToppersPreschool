@@ -4,20 +4,16 @@ import { Link } from "react-router-dom";
 import ImageZoom from "react-image-zooom";
 
 const GalleryDisplay = (props) => {
-
   // const { ImageZoom } = props;
-
   const [items, setItems] = useState(GalleryImages);
   const [active, setActive] = useState(false);
   const filterItem = (categItem) => {
     const updateItems = GalleryImages.filter((curElem) => {
       return curElem.category === categItem;
     });
-
     setItems([...updateItems]);
     setActive(true);
   };
-
   return (
     <>
       <nav className="navbar navbar-light bg-light shadow-sm">
@@ -26,7 +22,6 @@ const GalleryDisplay = (props) => {
         </span>
       </nav>
       <br />
-
       <div className="container">
         <ul className="nav nav-pills justify-content-center">
           <li className="nav-item">
@@ -76,10 +71,8 @@ const GalleryDisplay = (props) => {
           </li>
           <li className="nav-item">
             <Link
-
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
-
               onClick={() => setItems(GalleryImages)}
             >
               All
@@ -87,12 +80,10 @@ const GalleryDisplay = (props) => {
           </li>
         </ul>
       </div>
-
       <div className="container-fluid mt-4">
         <div className="row">
           {items.map((elem) => {
             const { id, imageurl } = elem;
-
             return (
               <div className="col-sm-4" id={id}>
                 <div className="card mb-3">
@@ -100,7 +91,6 @@ const GalleryDisplay = (props) => {
                     <div className="col-md-12">
                       <ImageZoom src={imageurl} alt="Zoom-images" zoom="500" />
                     </div>
-
                     <div className="col-md-0">
                       <div className="card-body">
                         {/* <h5 className="card-title mb-0">{id}</h5>
@@ -120,5 +110,4 @@ const GalleryDisplay = (props) => {
     </>
   );
 };
-
 export default GalleryDisplay;

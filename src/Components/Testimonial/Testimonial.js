@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 function Testimonial() {
     return (
         <>
-
             <div className="container-fluid py-5">
                 <div className="container p-0">
                     <div className="text-center pb-2">
@@ -73,5 +71,4 @@ function Testimonial() {
         </>
     )
 }
-
 export default Testimonial;

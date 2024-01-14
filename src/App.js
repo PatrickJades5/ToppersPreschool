@@ -3,7 +3,6 @@ import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
 import AboutHeader from './Components/About/AboutHeader';
 import ActivitiesHeader from './Components/Activities/ActivitiesHeader';
-//import ContactHeader from './Components/Contact/Contact';
 import Facilities from './Components/Facilities/Facilities';
 import Testimonial from './Components/Testimonial/Testimonial';
 import TeachersHeader from './Components/Teachers/TeachersHeader';
@@ -12,17 +11,11 @@ import Navbar from './Components/Navbar/Navbar';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from "styled-components";
 import GoToTop from './Components/GoToTop/GoToTop';
-// import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import ContactHeader from './Components/Contact/ContactHeader';
-//import Loader from './Components/Loader/Loader';
-//import Testimonial2 from './Components/Testimonial/Testimonial2';
-//import {MDBCarouselInner} from 'mdb-react-ui-kit';
-//import ImageZoom from "react-image-zooom";
 
 function App() {
-
   const theme = {
     colors: {
       heading: "rgb(24 24 29)",
@@ -44,17 +37,12 @@ function App() {
     media: { mobile: "768px", tab: "998px" },
   };
 
-
   return (
     <>
       <ThemeProvider theme={theme}>
-        {/* <GlobalStyle /> */}
-
         <BrowserRouter>
           <div className="App">
-            {/* <Loader /> */}
             <Navbar />
-
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/About' element={<AboutHeader />} />
@@ -65,8 +53,6 @@ function App() {
               <Route path='/Gallery' element={<GalleryHeader />} />
               <Route path='/Contact' element={<ContactHeader />} />
             </Routes>
-            {/* <GalleryReact /> */}
-            {/* <Testimonial2 /> */}
             <Footer />
             <GoToTop />
           </div>
@@ -75,5 +61,4 @@ function App() {
     </>
   );
 }
-
 export default App;

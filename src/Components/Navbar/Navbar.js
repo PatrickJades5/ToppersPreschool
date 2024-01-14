@@ -21,18 +21,17 @@ function Navbar() {
                             <Link className="nav-item nav-link active" to="/Teachers">Teachers</Link>
                             <Link className="nav-item nav-link active" to="/Gallery">Gallery</Link>
                             {/* <Link className="nav-item nav-link active" to="/Contact">Contact</Link> */}
-
                             {/* <a href="about.html" className="nav-item nav-link">About</a>
-                    <a href="class.html" className="nav-item nav-link">Classes</a>
-                    <a href="team.html" className="nav-item nav-link">Teachers</a>
-                    <a href="gallery.html" className="nav-item nav-link">Gallery</a> */}
+                            <a href="class.html" className="nav-item nav-link">Classes</a>
+                            <a href="team.html" className="nav-item nav-link">Teachers</a>
+                            <a href="gallery.html" className="nav-item nav-link">Gallery</a> */}
                             {/* <div className="nav-item dropdown">
-                        <a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div className="dropdown-menu rounded-0 m-0">
+                            <a href="/" className="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <div className="dropdown-menu rounded-0 m-0">
                             <a href="blog.html" className="dropdown-item">Blog Grid</a>
                             <a href="single.html" className="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div> */}
+                            </div>
+                            </div> */}
                             {/* <a href="contact.html" className="nav-item nav-link">Contact</a> */}
                         </div>
                         <Link to="/Contact" className="btn btn-primary px-4">Contact Us</Link>
@@ -42,5 +41,4 @@ function Navbar() {
         </>
     )
 }
-
 export default Navbar;

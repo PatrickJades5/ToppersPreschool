@@ -1,11 +1,11 @@
 import React from "react";
-//import {MDBCarouselInner} from 'mdb-react-ui-kit';
+
 import {
   MDBCarousel,
   MDBCarouselInner,
   MDBCarouselItem,
   MDBCol,
-  MDBIcon,
+  MDBIcon,  
   MDBTypography,
   MDBContainer,
   MDBRow,

@@ -4,28 +4,23 @@ import { FaArrowUp } from "react-icons/fa";
 
 const GoToTop = () => {
   const [isVisible, setIsVisible] = useState(true);
-
   const goToBtn = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
-
   const listenToScroll = () => {
     let heightToHidden = 20;
     const winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
-
     if (winScroll > heightToHidden) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
     }
   };
-
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
   }, []);
-
   return (
     <Wrapper>
       {isVisible && (
@@ -36,13 +31,11 @@ const GoToTop = () => {
     </Wrapper>
   );
 };
-
 const Wrapper = styled.section`
   display: flex;
   justify-content: center;"
   align-items: center;
   position: relative;
-
   .top-btn {
     font-size: 2.4rem;
     width: 4rem;
@@ -59,11 +52,9 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
     &--icon {
       animation: gototop 1.2s linear infinite alternate-reverse;
     }
-
     @keyframes gototop {
       0% {
         transform: translateY(-0.5rem);
@@ -73,7 +64,6 @@ const Wrapper = styled.section`
       }
     }
   }
-
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     .top-btn {
       right: 0;
@@ -81,5 +71,4 @@ const Wrapper = styled.section`
     }
   }
 `;
-
 export default GoToTop;

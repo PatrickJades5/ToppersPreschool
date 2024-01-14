@@ -12,5 +12,4 @@ const TeachersHeader = () => {
     </>
   )
 }
-
 export default TeachersHeader;

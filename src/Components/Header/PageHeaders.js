@@ -2,15 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const PageHeaders = (props) => {
-
   const { header } = props;
   return (
     <>
-
       <div className="container-fluid bg-primary mb-5">
         <Link to="/"><img src="./assets/img/ToppersPreschoolLogo.png" style={{ height: '50px', width: '50px' }} alt="ToppersPreschoolLogo" /></Link>
         <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: 400 }}>
-
           <h3 className="display-3 font-weight-bold text-white">{header}</h3>
           <div className="d-inline-flex text-white">
             <p className="m-0"><Link className="text-white" to="/">Home</Link></p>
@@ -22,5 +19,4 @@ const PageHeaders = (props) => {
     </>
   )
 }
-
 export default PageHeaders;
