@@ -6,7 +6,9 @@ function Navbar() {
         <>
             <div className="container-fluid bg-light position-relative shadow">
                 <nav className="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
-                    <Link img className="navbar" src="./assets/img/ToppersPreschoolLogo.png" alt="ToppersPreschoolLogo" style={{ height: '20px', width: '20px' }} to="/"></Link>
+                    <Link to="/">
+                        <img className="navbar" src="./assets/img/ToppersPreschoolLogo.png" alt="ToppersPreschoolLogo" style={{ height: '80px', width: '100px' }} />
+                    </Link>
                     <Link to="/" className="navbar-brand font-weight-bold text-secondary" style={{ fontSize: '50px' }} >
                         <span className="text-primary">Toppers Preschool</span>
                     </Link>

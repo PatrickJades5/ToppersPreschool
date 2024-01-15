@@ -6,7 +6,6 @@ const PageHeaders = (props) => {
   return (
     <>
       <div className="container-fluid bg-primary mb-5">
-        <Link to="/"><img src="./assets/img/ToppersPreschoolLogo.png" style={{ height: '50px', width: '50px' }} alt="ToppersPreschoolLogo" /></Link>
         <div className="d-flex flex-column align-items-center justify-content-center" style={{ minHeight: 400 }}>
           <h3 className="display-3 font-weight-bold text-white">{header}</h3>
           <div className="d-inline-flex text-white">
