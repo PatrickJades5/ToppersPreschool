@@ -65,24 +65,6 @@ function Teachers() {
                             <h4>Reshma Nikam</h4>
                             <i>Language Teacher</i>
                         </div>
-                        <div className="col-md-6 col-lg-3 text-center team mb-5">
-                            <div className="position-relative overflow-hidden mb-4" style={{ borderRadius: "100%" }}>
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                </div>
-                            </div>
-                            <h4>Mollie Ross</h4>
-                            <i>Dance Teacher</i>
-                        </div>
-                        <div className="col-md-6 col-lg-3 text-center team mb-5">
-                            <div className="position-relative overflow-hidden mb-4" style={{ borderRadius: "100%" }}>
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="team-social d-flex align-items-center justify-content-center w-100 h-100 position-absolute">
-                                </div>
-                            </div>
-                            <h4>Donald John</h4>
-                            <i>Art Teacher</i>
-                        </div>
                     </div>
                 </div>
             </div>

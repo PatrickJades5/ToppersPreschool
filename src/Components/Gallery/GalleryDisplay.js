@@ -24,7 +24,7 @@ const GalleryDisplay = (props) => {
       <br />
       <div className="container">
         <ul className="nav nav-pills justify-content-center">
-          <li className="nav-item">
+          <li className="nav-item" style={{marginRight: '5px'}}>
             <Link
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
@@ -33,7 +33,7 @@ const GalleryDisplay = (props) => {
               Annual Function
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{marginRight: '5px'}}>
             <Link
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
@@ -42,7 +42,7 @@ const GalleryDisplay = (props) => {
               Festival Celebration
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{marginRight: '5px'}}>
             <Link
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
@@ -51,7 +51,7 @@ const GalleryDisplay = (props) => {
               Days Celebration
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{marginRight: '5px'}}>
             <Link
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
@@ -60,7 +60,7 @@ const GalleryDisplay = (props) => {
               Fun and Games
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item" style={{marginRight: '5px'}}>
             <Link
               className={active ? "nav-link" : "nav-link active"}
               to="javascrip:0;"
@@ -89,17 +89,17 @@ const GalleryDisplay = (props) => {
                 <div className="card mb-3">
                   <div className="row no-gutters">
                     <div className="col-md-12">
-                      <ImageZoom src={imageurl} alt="Zoom-images" zoom="500" />
+                      <ImageZoom src={imageurl} alt="Zoom-images" zoom="500" width="420" height="220" />
                     </div>
-                    <div className="col-md-0">
+                    {/* <div className="col-md-0">
                       <div className="card-body">
-                        {/* <h5 className="card-title mb-0">{id}</h5>
+                        <h5 className="card-title mb-0">{id}</h5>
                         <p className="card-text">{name}</p>
-                        <p className="card-text">{description}</p> */}
+                        <p className="card-text">{description}</p>
                         <div className="d-flex justify-content-between">
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

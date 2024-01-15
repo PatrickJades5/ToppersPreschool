@@ -1,6 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { kidsGalleryList } from '../constant';
 
+const Card = ({ url, alt }) => {
+    return (
+        <div className="col-lg-4 col-md-6 mb-4 portfolio-item">
+            <div className="position-relative overflow-hidden mb-2">
+                <img className="img-fluid w-100" src={url} alt={alt} style={{ height:'216px', width:'288px', borderRadius: '5px'}}/>
+                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                    <a href={url} data-lightbox="portfolio">
+                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
+                    </a>
+                </div>
+            </div>
+        </div>
+    )
+}
 function Gallery() {
     return (
         <>
@@ -21,66 +35,11 @@ function Gallery() {
                         </div>
                     </div>
                     <div className="row portfolio-container">
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/IMG_20231116_212902.jpg" alt="IMG_20231116_212902" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/IMG_20231116_212902.jpg" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/IMG20230622095600.jpg" alt="IMG20230622095600" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/IMG20230622095600.jpg" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                            <div className="position-relative overflow-hidden mb-2">
-                                <img className="img-fluid w-100" src="./assets/img/" alt="" />
-                                <div className="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                                    <a href="./assets/img/" data-lightbox="portfolio">
-                                        <i className="fa fa-plus text-white" style={{ fontSize: 60 }} />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        {
+                            kidsGalleryList.map(({ url, alt }, index) =>
+                                <Card url={url} alt={alt} key={`kids-gallery-${index}`} />
+                            )
+                        }
                     </div>
                 </div>
             </div>
